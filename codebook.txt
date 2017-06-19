@@ -1,0 +1,346 @@
+The 'Run_analysis.R' script will provide two tables:
+
+- completetable with all observations of the  measurements on
+ the mean and standard deviation for each measurement
+
+- tableofaverages with the average of the  measurements on  the mean and
+ standard deviation for each measurement for each activity and each subject
+ 
+ Both tables have 68 columns. Below follows a description of each column
+ 
+1 - activity
+	A factor specifying the activity performed with six levels:
+	1 - walking
+	2 - walkingupstairs
+	3 - walkingdownstairs
+	4 - sitting
+	5 - standing
+	6 - laying
+	
+2 - subject
+	A factor specifying which subject performed the activity, 
+	with each subject indicated by a number from 1 to 30
+
+3 - bodyaccelerometertimexmean
+	mean of body component of accelerometer reading in time domain, x direction
+	numeric, normalised measurements varying between -1 and 1.
+	
+4 - bodyaccelerometertimeymean
+	mean of body component of accelerometer reading in time domain, y direction
+	numeric, normalised measurements varying between -1 and 1.
+	
+5 - bodyaccelerometertimezmean
+	mean of body component of accelerometer reading in time domain, z direction
+	numeric, normalised measurements varying between -1 and 1.
+	
+6 - bodyaccelerometertimexstandarddeviation
+	standard deviation of body component of accelerometer reading
+	in time domain, x direction
+	numeric, normalised measurements varying between -1 and 1.
+
+7 -  bodyaccelerometertimeystandarddeviation
+	standard deviation of body component of accelerometer reading
+	in time domain, y direction
+	numeric, normalised measurements varying between -1 and 1.
+	
+8 -  bodyaccelerometertimezstandarddeviation
+	standard deviation of body component of accelerometer reading
+	in time domain, z direction
+	numeric, normalised measurements varying between -1 and 1.
+	
+9 -  gravityaccelerometertimexmean
+	mean of gravity component of accelerometer reading in time domain, 
+	x direction
+	numeric, normalised measurements varying between -1 and 1.
+
+10 -  gravityaccelerometertimeymean
+	mean of gravity component of accelerometer reading in time domain, 
+	y direction
+	numeric, normalised measurements varying between -1 and 1.
+	
+11 -  gravityaccelerometertimezmean
+	mean of gravity component of accelerometer reading in time domain, 
+	z direction
+	numeric, normalised measurements varying between -1 and 1.
+
+12 -  gravityaccelerometertimexstandarddeviation
+	standard deviation of gravity component of accelerometer reading
+	in time domain, x direction
+	numeric, normalised measurements varying between -1 and 1.
+
+13 -  gravityaccelerometertimeystandarddeviation
+	standard deviation of gravity component of accelerometer reading
+	in time domain, y direction
+	numeric, normalised measurements varying between -1 and 1.
+	
+14 -  gravityaccelerometertimezstandarddeviation
+	standard deviation of gravity component of accelerometer reading
+	in time domain, z direction
+	numeric, normalised measurements varying between -1 and 1.
+	
+15 -  bodyaccelerometerjerktimexmean
+	mean of Jerk signal based on body component of accelerometer measurements 
+	in time domain, x direction
+	numeric, normalised measurements varying between -1 and 1.
+
+16 -  bodyaccelerometerjerktimeymean
+	mean of Jerk signal based on body component of accelerometer measurements 
+	in time domain, y direction
+	numeric, normalised measurements varying between -1 and 1.
+	
+17 -  bodyaccelerometerjerktimezmean
+	mean of Jerk signal based on body component of accelerometer measurements 
+	in time domain, z direction
+	numeric, normalised measurements varying between -1 and 1.
+
+18 -  bodyaccelerometerjerktimexstandarddeviation
+	standard deviation of Jerk signal based on body component of accelerometer
+	measurements 
+	in time domain, x direction
+	numeric, normalised measurements varying between -1 and 1.
+
+19 -  bodyaccelerometerjerktimeystandarddeviation
+	standard deviation of Jerk signal based on body component of accelerometer
+	measurements in time domain, y direction
+	numeric, normalised measurements varying between -1 and 1.
+
+20 -  bodyaccelerometerjerktimezstandarddeviation
+	standard deviation of Jerk signal based on body component of accelerometer
+	measurements in time domain, z direction
+	numeric, normalised measurements varying between -1 and 1.
+	
+21 -  bodygyroscopetimexmean
+	mean of body component of gyroscope reading in time domain, x direction
+	numeric, normalised measurements varying between -1 and 1.
+
+22 -  bodygyroscopetimeymean
+	mean of body component of gyroscope reading in time domain, y direction
+	numeric, normalised measurements varying between -1 and 1.
+	
+23 -  bodygyroscopetimezmean
+	mean of body component of gyroscope reading in time domain, z direction
+	numeric, normalised measurements varying between -1 and 1.
+	
+24 -  bodygyroscopetimexstandarddeviation
+	standard deviation of body component of gyroscope reading in time domain,
+	x direction
+	numeric, normalised measurements varying between -1 and 1
+	
+25 -  bodygyroscopetimeystandarddeviation
+	standard deviation of body component of gyroscope reading in time domain,
+	y direction
+	numeric, normalised measurements varying between -1 and 1
+	
+26 -  bodygyroscopetimezstandarddeviation
+	standard deviation of body component of gyroscope reading in time domain,
+	z direction
+	numeric, normalised measurements varying between -1 and 1
+	
+27 -  bodygyroscopejerktimexmean
+	mean of Jerk signal based on body component of gyroscope measurements 
+	in time domain, x direction
+	numeric, normalised measurements varying between -1 and 1.
+
+28 -  bodygyroscopejerktimeymean
+	mean of Jerk signal based on body component of gyroscope measurements 
+	in time domain, y direction
+	numeric, normalised measurements varying between -1 and 1.
+
+29 -  bodygyroscopejerktimezmean
+	mean of Jerk signal based on body component of gyroscope measurements 
+	in time domain, z direction
+	numeric, normalised measurements varying between -1 and 1.
+
+30 -  bodygyroscopejerktimexstandarddeviation
+	standard deviation of Jerk signal based on body component of gyroscope
+	measurements in time domain, x direction
+	numeric, normalised measurements varying between -1 and 1.
+
+31 -  bodygyroscopejerktimeystandarddeviation
+	standard deviation of Jerk signal based on body component of  gyroscope
+	measurements in time domain, y direction
+	numeric, normalised measurements varying between -1 and 1.
+	
+32 -  bodygyroscopejerktimezstandarddeviation
+	standard deviation of Jerk signal based on body component of gyroscope
+	measurements in time domain, z direction
+	numeric, normalised measurements varying between -1 and 1.
+	
+33 -  bodyaccelerometertimemagnitudemean
+	mean of magnitude order of body component of accelerometer reading
+	in time domain
+	numeric, normalised measurements varying between -1 and 1.
+
+34 -  bodyaccelerometertimemagnitudestandarddeviation
+	standard deviation of magnitude order of body component of accelerometer
+	reading in time domain
+	numeric, normalised measurements varying between -1 and 1.
+	
+35 -  gravityaccelerometertimemagnitudemean
+	mean of magnitude order of gravity component of accelerometer reading
+	in time domain
+	numeric, normalised measurements varying between -1 and 1.
+	
+36 -  gravityaccelerometertimemagnitudestandarddeviation
+	standard deviation of magnitude order of gravity component of accelerometer
+	reading in time domain
+	numeric, normalised measurements varying between -1 and 1.
+	
+37 -  bodyaccelerometerjerktimemagnitudemean
+	mean of magintude order of Jerk signal based on body component of 
+	accelerometer measurements in time domain
+	numeric, normalised measurements varying between -1 and 1.
+	
+38 -  bodyaccelerometerjerktimemagnitudestandarddeviation
+	standard deviation of magintude order of Jerk signal based on body component
+	of accelerometer measurements in time domain
+	numeric, normalised measurements varying between -1 and 1
+
+39 -  bodygyroscopetimemagnitudemean
+	mean of magnitude order of body component of gyroscope reading
+	in time domain
+	numeric, normalised measurements varying between -1 and 1.
+
+40 -  bodygyroscopetimemagnitudestandarddeviation
+	standard deviation of magnitude order of body component of gyroscope reading
+	in time domain
+	numeric, normalised measurements varying between -1 and 1.
+	
+41 -  bodygyroscopejerktimemagnitudemean
+	mean of magintude order of Jerk signal based on body component of 
+	gyroscope measurements in time domain
+	numeric, normalised measurements varying between -1 and 1.
+	
+42 -  bodygyroscopejerktimemagnitudestandarddeviation
+	standard deviation of magintude order of Jerk signal based on body component
+	of gyroscope measurements in time domain
+	numeric, normalised measurements varying between -1 and 1.
+	
+43 -  bodyaccelerometerfrequencyxmean
+	mean of body component of accelerometer reading in frequency domain,
+	x direction
+	numeric, normalised measurements varying between -1 and 1.
+	
+44 -  bodyaccelerometerfrequencyymean
+	mean of body component of accelerometer reading in frequency domain,
+	y direction
+	numeric, normalised measurements varying between -1 and 1.
+	
+45 -  bodyaccelerometerfrequencyzmean
+	mean of body component of accelerometer reading in frequency domain,
+	z direction
+	numeric, normalised measurements varying between -1 and 1.
+	
+46 -  bodyaccelerometerfrequencyxstandarddeviation
+	standard deviaion of body component of accelerometer reading
+	in frequency domain, x direction
+	numeric, normalised measurements varying between -1 and 1.
+	
+47 -  bodyaccelerometerfrequencyystandarddeviation
+	standard deviaion of body component of accelerometer reading
+	in frequency domain, y direction
+	numeric, normalised measurements varying between -1 and 1.
+
+48 -  bodyaccelerometerfrequencyzstandarddeviation
+	standard deviaion of body component of accelerometer reading
+	in frequency domain, z direction
+	numeric, normalised measurements varying between -1 and 1.
+
+49 -  bodyaccelerometerjerkfrequencyxmean
+	mean of Jerk signal based on body component of accelerometer measurements 
+	in frequency domain, x direction
+	numeric, normalised measurements varying between -1 and 1.
+
+50 -  bodyaccelerometerjerkfrequencyymean
+	mean of Jerk signal based on body component of accelerometer measurements 
+	in frequency domain, y direction
+	numeric, normalised measurements varying between -1 and 1.
+	
+51 -  bodyaccelerometerjerkfrequencyzmean
+	mean of Jerk signal based on body component of accelerometer measurements 
+	in frequency domain, z direction
+	numeric, normalised measurements varying between -1 and 1.
+	
+52 -  bodyaccelerometerjerkfrequencyxstandarddeviation
+	standard deviation of Jerk signal based on body component of
+	accelerometer measurements in frequency domain, x direction
+	numeric, normalised measurements varying between -1 and 1.
+	
+53 -  bodyaccelerometerjerkfrequencyystandarddeviation
+	standard deviation of Jerk signal based on body component of
+	accelerometer measurements in frequency domain, y direction
+	numeric, normalised measurements varying between -1 and 1.
+	
+54 -  bodyaccelerometerjerkfrequencyzstandarddeviation
+	accelerometer measurements in frequency domain, z direction
+	numeric, normalised measurements varying between -1 and 1.
+	
+55 -  bodygyroscopefrequencyxmean
+	mean of body component of gyroscope reading in frequency domain,
+	x direction
+	numeric, normalised measurements varying between -1 and 1.
+	
+56 -  bodygyroscopefrequencyymean
+	mean of body component of gyroscope reading in frequency domain,
+	y direction
+	numeric, normalised measurements varying between -1 and 1.
+	
+57 -  bodygyroscopefrequencyzmean
+	mean of body component of gyroscope reading in frequency domain,
+	z direction
+	numeric, normalised measurements varying between -1 and 1.
+	
+58 -  bodygyroscopefrequencyxstandarddeviation
+	standard deviation of body component of gyroscope reading 
+	in frequency domain, x direction
+	numeric, normalised measurements varying between -1 and 1.
+	
+59 -  bodygyroscopefrequencyystandarddeviation
+	standard deviation of body component of gyroscope reading 
+	in frequency domain, y direction
+	numeric, normalised measurements varying between -1 and 1.
+	
+60 -  bodygyroscopefrequencyzstandarddeviation
+	standard deviation of body component of gyroscope reading 
+	in frequency domain, z direction
+	numeric, normalised measurements varying between -1 and 1.
+	
+61 -  bodyaccelerometerfrequencymagnitudemean
+	mean of magnitude order of body component of accelerometer reading
+	in fequency domain
+	numeric, normalised measurements varying between -1 and 1.
+
+62 -  bodyaccelerometerfrequencymagnitudestandarddeviation
+	standard deviation of magnitude order of body component of accelerometer
+	reading in fequency domain
+	numeric, normalised measurements varying between -1 and 1.
+
+63 -  bodyaccelerometerjerkfrequencymagnitudemean
+	mean of magintude order of Jerk signal based on body component of 
+	accelerometer measurements in frequency domain
+	numeric, normalised measurements varying between -1 and 1.
+	
+64 -  bodyaccelerometerjerkfrequencymagnitudestandarddeviation
+	standard deviation of magintude order of Jerk signal based on body component
+	of accelerometer measurements in frequency domain
+	numeric, normalised measurements varying between -1 and 1.
+	
+65 -  bodygyroscopefrequencymagnitudemean
+	mean of magnitude order of body component of gyroscope reading
+	in fequency domain
+	numeric, normalised measurements varying between -1 and 1.
+	
+66 -  bodygyroscopefrequencymagnitudestandarddeviation
+	standard deviation of magnitude order of body component of gyroscope reading
+	in fequency domain
+	numeric, normalised measurements varying between -1 and 1.
+	
+67 -  bodygyroscopejerkfrequencymagnitudemean
+	mean of magintude order of Jerk signal based on body component of 
+	gyroscope measurements in frequency domain
+	numeric, normalised measurements varying between -1 and 1.
+
+68 -  bodygyroscopejerkfrequencymagnitudestandarddeviation
+	standard deviation of magintude order of Jerk signal based on body component
+	of gyroscope measurements in frequency domain
+	numeric, normalised measurements varying between -1 and 1.
