@@ -17,13 +17,13 @@ I found the text 'Extracts only the measurements on the mean and standard deviat
 I opted to only select those variables that end in '-mean()' or '-std()'.
 That means I omitted the following:
 - any column ending in meanFreq()
-555 angle(tBodyAccMean,gravity)
-556 angle(tBodyAccJerkMean),gravityMean)
-557 angle(tBodyGyroMean,gravityMean)
-558 angle(tBodyGyroJerkMean,gravityMean)
-559 angle(X,gravityMean)
-560 angle(Y,gravityMean)
-561 angle(Z,gravityMean)
+- 555 angle(tBodyAccMean,gravity)
+- 556 angle(tBodyAccJerkMean),gravityMean)
+- 557 angle(tBodyGyroMean,gravityMean)
+- 558 angle(tBodyGyroJerkMean,gravityMean)
+- 559 angle(X,gravityMean)
+- 560 angle(Y,gravityMean)
+- 561 angle(Z,gravityMean)
 
 I expect that in a real-life example, the customer - perhaps me - will know
 which data is required for further analysis.
